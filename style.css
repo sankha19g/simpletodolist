@@ -1,15 +1,13 @@
-/* Include the padding and border in an element's total width and height */
+
 * {
     box-sizing: border-box;
   }
   
-  /* Remove margins and padding from the list */
   ul {
     margin: 0;
     padding: 0;
   }
   
-  /* Style the list items */
   ul li {
     cursor: pointer;
     position: relative;
@@ -18,7 +16,6 @@
     font-size: 18px;
     transition: 0.2s;
   
-    /* make the list items unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -26,20 +23,16 @@
   }
   
   
-  
-  /* Darker background-color on hover */
   ul li:hover {
     background: #ddd;
   }
   
-  /* When clicked on, add a background color and strike out text */
   ul li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
   }
   
-  /* Add a "checked" mark when clicked on */
   ul li.checked::before {
     content: '';
     position: absolute;
@@ -53,7 +46,6 @@
     width: 7px;
   }
   
-  /* Style the close button */
   .close {
     position: absolute;
     right: 0;
@@ -65,23 +57,28 @@
     background-color: #f44336;
     color: white;
   }
-  
-  /* Style the header */
+  .heading {
+    background-color: black;
+    width: 50%;
+    margin-left: 353px;
+}
   .header {
-    background-image:url(img/1.jpg);
+    background-image:url(undraw_to_do_list_re_9nt7.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #9797b4;
     padding: 84px 37px;
     color: white;
     text-align: center;
 }
   
-  /* Clear floats after the header */
+  
   .header:after {
     content: "";
     display: table;
     clear: both;
   }
   
-  /* Style the input */
   input {
     margin: 0;
     border: none;
@@ -92,7 +89,7 @@
     font-size: 16px;
   }
   
-  /* Style the "Add" button */
+
   .addBtn {
     padding: 10px;
     width: 25%;
@@ -110,3 +107,39 @@
     background-color: rgb(0, 0, 0);
     color: #ddd;
   }
+  @media (max-width:452px) {
+    .heading {
+      background-color: black;
+      width: 90%;
+      margin-left: 15px;
+  }
+    
+  body{
+    margin: 0;
+      }
+  }
+
+  @media (min-width: 453px) and (max-width: 999px) {
+    .heading {
+      background-color: black;
+      width: 50%;
+      margin-left: 172px;
+  }
+  body{
+margin: 0;
+  }   
+  }
+
+  @media (min-width:1000px) {
+    .heading {
+      background-color: black;
+      width: 39%;
+      margin-left: 400px;
+  }
+  body{
+margin: 0;
+  }
+    
+  }
+
+
